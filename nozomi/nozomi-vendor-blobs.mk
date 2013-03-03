@@ -38,7 +38,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/nozomi/proprietary/bin/rild:system/bin/rild \
     vendor/sony/nozomi/proprietary/bin/rmt_storage:system/bin/rmt_storage \
     vendor/sony/nozomi/proprietary/bin/secchand:system/bin/secchand \
-    vendor/sony/nozomi/proprietary/bin/semc-atfwd-d:system/bin/semc-atfwd-d \
     vendor/sony/nozomi/proprietary/bin/startupflag:system/bin/startupflag \
     vendor/sony/nozomi/proprietary/bin/suntrold:system/bin/suntrold \
     vendor/sony/nozomi/proprietary/bin/ta_reader:system/bin/ta_reader \
@@ -90,8 +89,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/nozomi/proprietary/etc/firmware/tzapps.b02:system/etc/firmware/tzapps.b02 \
     vendor/sony/nozomi/proprietary/etc/firmware/tzapps.mdt:system/etc/firmware/tzapps.mdt \
     vendor/sony/nozomi/proprietary/etc/firmware/vidc_1080p.fw:system/etc/firmware/vidc_1080p.fw \
-    vendor/sony/nozomi/proprietary/etc/firmware/yamato_pfp.fw:system/etc/firmware/yamato_pfp.fw \
-    vendor/sony/nozomi/proprietary/etc/firmware/yamato_pm4.fw:system/etc/firmware/yamato_pm4.fw \
     vendor/sony/nozomi/proprietary/etc/flashled_calc_parameters.cfg:system/etc/flashled_calc_parameters.cfg \
     vendor/sony/nozomi/proprietary/etc/permissions/com.dsi.ant.antradio_library.xml:system/etc/permissions/com.dsi.ant.antradio_library.xml \
     vendor/sony/nozomi/proprietary/etc/sensors.conf:system/etc/sensors.conf \
