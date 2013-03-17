@@ -27,8 +27,6 @@ PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/proprietary/system/etc/firmware/a300_pfp.fw:system/etc/firmware/a300_pfp.fw \
     $(COMMON_PATH)/proprietary/system/etc/firmware/leia_pfp_470.fw:system/etc/firmware/leia_pfp_470.fw \
     $(COMMON_PATH)/proprietary/system/etc/firmware/leia_pm4_470.fw:system/etc/firmware/leia_pm4_470.fw \
-    $(COMMON_PATH)/proprietary/system/etc/firmware/vidc_1080p.fw:system/etc/firmware/vidc_1080p.fw \
-    $(COMMON_PATH)/proprietary/system/etc/firmware/vidcfw.elf:system/etc/firmware/vidcfw.elf \
     $(COMMON_PATH)/proprietary/system/lib/egl/libGLESv2_adreno200.so:system/lib/egl/libGLESv2_adreno200.so \
     $(COMMON_PATH)/proprietary/system/lib/egl/eglsubAndroid.so:system/lib/egl/eglsubAndroid.so \
     $(COMMON_PATH)/proprietary/system/lib/egl/libGLESv2S3D_adreno200.so:system/lib/egl/libGLESv2S3D_adreno200.so \
@@ -37,9 +35,6 @@ PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/proprietary/system/lib/egl/libEGL_adreno200.so:system/lib/egl/libEGL_adreno200.so \
     $(COMMON_PATH)/proprietary/system/lib/egl/libGLESv1_CM_adreno200.so:system/lib/egl/libGLESv1_CM_adreno200.so \
     $(COMMON_PATH)/proprietary/system/lib/libC2D2.so:system/lib/libC2D2.so \
-    $(COMMON_PATH)/proprietary/system/lib/libI420colorconvert.so:system/lib/libI420colorconvert.so \
-    $(COMMON_PATH)/proprietary/system/lib/libOmxAacDec.so:system/lib/libOmxAacDec.so \
-    $(COMMON_PATH)/proprietary/system/lib/libOmxWmaDec.so:system/lib/libOmxWmaDec.so \
     $(COMMON_PATH)/proprietary/system/lib/libOpenVG.so:system/lib/libOpenVG.so \
     $(COMMON_PATH)/proprietary/system/lib/libOpenCL.so:system/lib/libOpenCL.so \
     $(COMMON_PATH)/proprietary/system/lib/libc2d2_a3xx.so:system/lib/libc2d2_a3xx.so \
@@ -47,6 +42,5 @@ PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/proprietary/system/lib/libllvm-a3xx.so:system/lib/libllvm-a3xx.so \
     $(COMMON_PATH)/proprietary/system/lib/libllvm-arm.so:system/lib/libllvm-arm.so \
     $(COMMON_PATH)/proprietary/system/lib/libgsl.so:system/lib/libgsl.so \
-    $(COMMON_PATH)/proprietary/system/lib/libmercury.so:system/lib/libmercury.so \
     $(COMMON_PATH)/proprietary/system/lib/libsc-a2xx.so:system/lib/libsc-a2xx.so \
     $(COMMON_PATH)/proprietary/system/lib/libsc-a3xx.so:system/lib/libsc-a3xx.so
