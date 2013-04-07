@@ -41,6 +41,7 @@ PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/proprietary/system/lib/libc2d2_z180.so:system/lib/libc2d2_z180.so \
     $(COMMON_PATH)/proprietary/system/lib/libllvm-a3xx.so:system/lib/libllvm-a3xx.so \
     $(COMMON_PATH)/proprietary/system/lib/libllvm-arm.so:system/lib/libllvm-arm.so \
+    $(COMMON_PATH)/proprietary/system/lib/libmercury.so:system/lib/libmercury.so \
     $(COMMON_PATH)/proprietary/system/lib/libgsl.so:system/lib/libgsl.so \
     $(COMMON_PATH)/proprietary/system/lib/libsc-a2xx.so:system/lib/libsc-a2xx.so \
     $(COMMON_PATH)/proprietary/system/lib/libsc-a3xx.so:system/lib/libsc-a3xx.so
