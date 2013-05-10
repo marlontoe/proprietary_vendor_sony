@@ -21,25 +21,23 @@ PRODUCT_COPY_FILES := \
     vendor/sony/tsubasa/proprietary/lib/libv8.so:obj/lib/libv8.so
 
 PRODUCT_COPY_FILES += \
-    vendor/sony/tsubasa/proprietary/bin/bridgemgrd:system/bin/bridgemgrd \
     vendor/sony/tsubasa/proprietary/bin/btnvtool:system/bin/btnvtool \
     vendor/sony/tsubasa/proprietary/bin/cal_data_manager:system/bin/cal_data_manager \
     vendor/sony/tsubasa/proprietary/bin/chargemon:system/bin/chargemon \
-    vendor/sony/tsubasa/proprietary/bin/clearpad_fwloader:system/bin/clearpad_fwloader \
+    vendor/sony/tsubasa/proprietary/bin/cnd:system/bin/cnd \
     vendor/sony/tsubasa/proprietary/bin/ds_fmc_appd:system/bin/ds_fmc_appd \
     vendor/sony/tsubasa/proprietary/bin/fast-dormancy:system/bin/fast-dormancy \
     vendor/sony/tsubasa/proprietary/bin/fm_qsoc_patches:system/bin/fm_qsoc_patches \
     vendor/sony/tsubasa/proprietary/bin/fmconfig:system/bin/fmconfig \
     vendor/sony/tsubasa/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
-    vendor/sony/tsubasa/proprietary/bin/mm-pp-daemon:system/bin/mm-pp-daemon \
     vendor/sony/tsubasa/proprietary/bin/mpdecision:system/bin/mpdecision \
     vendor/sony/tsubasa/proprietary/bin/netmgrd:system/bin/netmgrd \
-    vendor/sony/tsubasa/proprietary/bin/qmiproxy:system/bin/qmiproxy \
     vendor/sony/tsubasa/proprietary/bin/qmuxd:system/bin/qmuxd \
-    vendor/sony/tsubasa/proprietary/bin/rild:system/bin/rild \
+    vendor/sony/tsubasa/proprietary/bin/qrngd:system/bin/qrngd \
+    vendor/sony/tsubasa/proprietary/bin/qseecomd:system/bin/qseecomd \
+    vendor/sony/tsubasa/proprietary/bin/rmi4_fwloader:system/bin/rmi4_fwloader \
     vendor/sony/tsubasa/proprietary/bin/rmt_storage:system/bin/rmt_storage \
     vendor/sony/tsubasa/proprietary/bin/secchand:system/bin/secchand \
-    vendor/sony/tsubasa/proprietary/bin/system_monitor:system/bin/system_monitor \
     vendor/sony/tsubasa/proprietary/bin/ta_param_loader:system/bin/ta_param_loader \
     vendor/sony/tsubasa/proprietary/bin/ta_qmi_service:system/bin/ta_qmi_service \
     vendor/sony/tsubasa/proprietary/bin/tad:system/bin/tad \
@@ -49,12 +47,9 @@ PRODUCT_COPY_FILES += \
     vendor/sony/tsubasa/proprietary/bin/usbhub:system/bin/usbhub \
     vendor/sony/tsubasa/proprietary/bin/usbhub_init:system/bin/usbhub_init \
     vendor/sony/tsubasa/proprietary/bin/wait4tad:system/bin/wait4tad \
-    vendor/sony/tsubasa/proprietary/etc/clearpad_fwloader.sh:system/etc/clearpad_fwloader.sh \
     vendor/sony/tsubasa/proprietary/etc/fast-dormancy/fd_custm_conf.txt:system/etc/fast-dormancy/fd_custm_conf.txt \
     vendor/sony/tsubasa/proprietary/etc/fast-dormancy/fd_ext_conf.txt:system/etc/fast-dormancy/fd_ext_conf.txt \
     vendor/sony/tsubasa/proprietary/etc/fast-dormancy/fd_int_conf.txt:system/etc/fast-dormancy/fd_int_conf.txt \
-    vendor/sony/tsubasa/proprietary/etc/firmware/cyttsp_8064_mtp.hex:system/etc/firmware/cyttsp_8064_mtp.hex \
-    vendor/sony/tsubasa/proprietary/etc/firmware/cyttsp_8960_cdp.hex:system/etc/firmware/cyttsp_8960_cdp.hex \
     vendor/sony/tsubasa/proprietary/etc/firmware/dsps.b00:system/etc/firmware/dsps.b00 \
     vendor/sony/tsubasa/proprietary/etc/firmware/dsps.b01:system/etc/firmware/dsps.b01 \
     vendor/sony/tsubasa/proprietary/etc/firmware/dsps.b02:system/etc/firmware/dsps.b02 \
@@ -140,8 +135,11 @@ PRODUCT_COPY_FILES += \
     vendor/sony/tsubasa/proprietary/etc/firmware/wcnss.b04:system/etc/firmware/wcnss.b04 \
     vendor/sony/tsubasa/proprietary/etc/firmware/wcnss.b05:system/etc/firmware/wcnss.b05 \
     vendor/sony/tsubasa/proprietary/etc/firmware/wcnss.mdt:system/etc/firmware/wcnss.mdt \
+    vendor/sony/tsubasa/proprietary/etc/flashled_calc_parameters.cfg:system/etc/flashled_calc_parameters.cfg \
+    vendor/sony/tsubasa/proprietary/lib/hw/camera.msm8960.so:system/lib/hw/camera.msm8960.so \
+    vendor/sony/tsubasa/proprietary/lib/hw/camera.qcom.so:system/lib/hw/camera.qcom.so \
+    vendor/sony/tsubasa/proprietary/lib/hw/gps.default.so:system/lib/hw/gps.default.so \
     vendor/sony/tsubasa/proprietary/lib/hw/nfc.msm8960.so:system/lib/hw/nfc.msm8960.so \
-    vendor/sony/tsubasa/proprietary/lib/hw/sensors.default.so:system/lib/hw/sensors.default.so \
     vendor/sony/tsubasa/proprietary/lib/libMPU3050.so:system/lib/libMPU3050.so \
     vendor/sony/tsubasa/proprietary/lib/libMiscTaAccessor.so:system/lib/libMiscTaAccessor.so \
     vendor/sony/tsubasa/proprietary/lib/libQSEEComAPI.so:system/lib/libQSEEComAPI.so \
@@ -157,30 +155,37 @@ PRODUCT_COPY_FILES += \
     vendor/sony/tsubasa/proprietary/lib/libcald_server.so:system/lib/libcald_server.so \
     vendor/sony/tsubasa/proprietary/lib/libcald_util.so:system/lib/libcald_util.so \
     vendor/sony/tsubasa/proprietary/lib/libcameralight.so:system/lib/libcameralight.so \
+    vendor/sony/tsubasa/proprietary/lib/libcamera_clientsemc.so:system/lib/libcamera_clientsemc.so \
+    vendor/sony/tsubasa/proprietary/lib/libcnefeatureconfig.so:system/lib/libcnefeatureconfig.so \
+    vendor/sony/tsubasa/proprietary/lib/libcneqmiutils.so:system/lib/libcneqmiutils.so \
+    vendor/sony/tsubasa/proprietary/lib/libcneutils.so:system/lib/libcneutils.so \
     vendor/sony/tsubasa/proprietary/lib/libdiag.so:system/lib/libdiag.so \
     vendor/sony/tsubasa/proprietary/lib/libdrmdiag.so:system/lib/libdrmdiag.so \
+    vendor/sony/tsubasa/proprietary/lib/libdrmfs.so:system/lib/libdrmfs.so \
     vendor/sony/tsubasa/proprietary/lib/libdsi_netctrl.so:system/lib/libdsi_netctrl.so \
     vendor/sony/tsubasa/proprietary/lib/libdsutils.so:system/lib/libdsutils.so \
     vendor/sony/tsubasa/proprietary/lib/libface.so:system/lib/libface.so \
     vendor/sony/tsubasa/proprietary/lib/libfmradio.so:system/lib/libfmradio.so \
     vendor/sony/tsubasa/proprietary/lib/libfmradio.sony-iris.so:system/lib/libfmradio.sony-iris.so \
     vendor/sony/tsubasa/proprietary/lib/libgemini.so:system/lib/libgemini.so \
+    vendor/sony/tsubasa/proprietary/lib/libgps.utils.so:system/lib/libgps.utils.so \
     vendor/sony/tsubasa/proprietary/lib/libidd.so:system/lib/libidd.so \
     vendor/sony/tsubasa/proprietary/lib/libidl.so:system/lib/libidl.so \
     vendor/sony/tsubasa/proprietary/lib/libimage-jpeg-enc-omx-comp.so:system/lib/libimage-jpeg-enc-omx-comp.so \
     vendor/sony/tsubasa/proprietary/lib/libimage-omx-common.so:system/lib/libimage-omx-common.so \
     vendor/sony/tsubasa/proprietary/lib/libkeyctrl.so:system/lib/libkeyctrl.so \
     vendor/sony/tsubasa/proprietary/lib/liblights-core.so:system/lib/liblights-core.so \
+    vendor/sony/tsubasa/proprietary/lib/liblights-core.so:system/lib/liblights-core.so \
+    vendor/sony/tsubasa/proprietary/lib/libloc_adapter.so:system/lib/libloc_adapter.so \
     vendor/sony/tsubasa/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
-    vendor/sony/tsubasa/proprietary/lib/libmercury.so:system/lib/libmercury.so \
+    vendor/sony/tsubasa/proprietary/lib/libloc_eng.so:system/lib/libloc_eng.so \
     vendor/sony/tsubasa/proprietary/lib/libmiscta.so:system/lib/libmiscta.so \
     vendor/sony/tsubasa/proprietary/lib/libmllite.so:system/lib/libmllite.so \
     vendor/sony/tsubasa/proprietary/lib/libmlplatform.so:system/lib/libmlplatform.so \
-    vendor/sony/tsubasa/proprietary/lib/libmm-abl-oem.so:system/lib/libmm-abl-oem.so \
-    vendor/sony/tsubasa/proprietary/lib/libmm-abl.so:system/lib/libmm-abl.so \
     vendor/sony/tsubasa/proprietary/lib/libmm-color-convertor.so:system/lib/libmm-color-convertor.so \
     vendor/sony/tsubasa/proprietary/lib/libmmcamera_faceproc.so:system/lib/libmmcamera_faceproc.so \
     vendor/sony/tsubasa/proprietary/lib/libmmcamera_frameproc.so:system/lib/libmmcamera_frameproc.so \
+    vendor/sony/tsubasa/proprietary/lib/libmmcamera_interface2.so:system/lib/libmmcamera_interface2.so \
     vendor/sony/tsubasa/proprietary/lib/libmmcamera_hdr_lib.so:system/lib/libmmcamera_hdr_lib.so \
     vendor/sony/tsubasa/proprietary/lib/libmmcamera_image_stab.so:system/lib/libmmcamera_image_stab.so \
     vendor/sony/tsubasa/proprietary/lib/libmmcamera_statsproc31.so:system/lib/libmmcamera_statsproc31.so \
@@ -201,45 +206,17 @@ PRODUCT_COPY_FILES += \
     vendor/sony/tsubasa/proprietary/lib/libqmi_client_qmux.so:system/lib/libqmi_client_qmux.so \
     vendor/sony/tsubasa/proprietary/lib/libqmi_common_so.so:system/lib/libqmi_common_so.so \
     vendor/sony/tsubasa/proprietary/lib/libqmi_csi.so:system/lib/libqmi_csi.so \
+    vendor/sony/tsubasa/proprietary/lib/libqmi_csvt_srvc.so:system/lib/libqmi_csvt_srvc.so \
     vendor/sony/tsubasa/proprietary/lib/libqmi_encdec.so:system/lib/libqmi_encdec.so \
     vendor/sony/tsubasa/proprietary/lib/libqmiservices.so:system/lib/libqmiservices.so \
     vendor/sony/tsubasa/proprietary/lib/libril-qc-qmi-1.so:system/lib/libril-qc-qmi-1.so \
-    vendor/sony/tsubasa/proprietary/lib/libril.so:system/lib/libril.so \
     vendor/sony/tsubasa/proprietary/lib/libs1sl.so:system/lib/libs1sl.so \
-    vendor/sony/tsubasa/proprietary/lib/libsensor1.so:system/lib/libsensor1.so \
-    vendor/sony/tsubasa/proprietary/lib/libsurfaceflinger_client.so:system/lib/libsurfaceflinger_client.so \
+    vendor/sony/tsubasa/proprietary/lib/libsensors_akm8972.so:system/lib/libsensors_akm8972.so \
     vendor/sony/tsubasa/proprietary/lib/libsys-utils.so:system/lib/libsys-utils.so \
     vendor/sony/tsubasa/proprietary/lib/libsysmon_idd.so:system/lib/libsysmon_idd.so \
     vendor/sony/tsubasa/proprietary/lib/libta.so:system/lib/libta.so \
     vendor/sony/tsubasa/proprietary/lib/libv8.so:system/lib/libv8.so \
-    vendor/sony/tsubasa/proprietary/lib/sysmon/sysmon_batt_therm.so:system/lib/sysmon/sysmon_batt_therm.so \
-    vendor/sony/tsubasa/proprietary/lib/sysmon/sysmon_camif.so:system/lib/sysmon/sysmon_camif.so \
-    vendor/sony/tsubasa/proprietary/lib/sysmon/sysmon_charge_current_limit_level.so:system/lib/sysmon/sysmon_charge_current_limit_level.so \
-    vendor/sony/tsubasa/proprietary/lib/sysmon/sysmon_corelimit.so:system/lib/sysmon/sysmon_corelimit.so \
-    vendor/sony/tsubasa/proprietary/lib/sysmon/sysmon_disable_charging1.so:system/lib/sysmon/sysmon_disable_charging1.so \
-    vendor/sony/tsubasa/proprietary/lib/sysmon/sysmon_disable_charging2.so:system/lib/sysmon/sysmon_disable_charging2.so \
-    vendor/sony/tsubasa/proprietary/lib/sysmon/sysmon_enable_charging.so:system/lib/sysmon/sysmon_enable_charging.so \
-    vendor/sony/tsubasa/proprietary/lib/sysmon/sysmon_gpu_perflevel.so:system/lib/sysmon/sysmon_gpu_perflevel.so \
-    vendor/sony/tsubasa/proprietary/lib/sysmon/sysmon_lcd_brightness_level.so:system/lib/sysmon/sysmon_lcd_brightness_level.so \
-    vendor/sony/tsubasa/proprietary/lib/sysmon/sysmon_modem_level0.so:system/lib/sysmon/sysmon_modem_level0.so \
-    vendor/sony/tsubasa/proprietary/lib/sysmon/sysmon_modem_level1.so:system/lib/sysmon/sysmon_modem_level1.so \
-    vendor/sony/tsubasa/proprietary/lib/sysmon/sysmon_modem_level2.so:system/lib/sysmon/sysmon_modem_level2.so \
-    vendor/sony/tsubasa/proprietary/lib/sysmon/sysmon_modem_level3.so:system/lib/sysmon/sysmon_modem_level3.so \
-    vendor/sony/tsubasa/proprietary/lib/sysmon/sysmon_msm_thermal_disable.so:system/lib/sysmon/sysmon_msm_thermal_disable.so \
-    vendor/sony/tsubasa/proprietary/lib/sysmon/sysmon_pa_therm0.so:system/lib/sysmon/sysmon_pa_therm0.so \
-    vendor/sony/tsubasa/proprietary/lib/sysmon/sysmon_pa_therm1.so:system/lib/sysmon/sysmon_pa_therm1.so \
-    vendor/sony/tsubasa/proprietary/lib/sysmon/sysmon_perflevel.so:system/lib/sysmon/sysmon_perflevel.so \
-    vendor/sony/tsubasa/proprietary/lib/sysmon/sysmon_pm8921_tz.so:system/lib/sysmon/sysmon_pm8921_tz.so \
-    vendor/sony/tsubasa/proprietary/lib/sysmon/sysmon_test_sensor.so:system/lib/sysmon/sysmon_test_sensor.so \
-    vendor/sony/tsubasa/proprietary/lib/sysmon/sysmon_torch_limit.so:system/lib/sysmon/sysmon_torch_limit.so \
-    vendor/sony/tsubasa/proprietary/lib/sysmon/sysmon_tsens_tz_sensor0.so:system/lib/sysmon/sysmon_tsens_tz_sensor0.so \
-    vendor/sony/tsubasa/proprietary/lib/sysmon/sysmon_tsens_tz_sensor1.so:system/lib/sysmon/sysmon_tsens_tz_sensor1.so \
-    vendor/sony/tsubasa/proprietary/lib/sysmon/sysmon_tsens_tz_sensor2.so:system/lib/sysmon/sysmon_tsens_tz_sensor2.so \
-    vendor/sony/tsubasa/proprietary/lib/sysmon/sysmon_tsens_tz_sensor3.so:system/lib/sysmon/sysmon_tsens_tz_sensor3.so \
-    vendor/sony/tsubasa/proprietary/lib/sysmon/sysmon_tsens_tz_sensor4.so:system/lib/sysmon/sysmon_tsens_tz_sensor4.so \
-    vendor/sony/tsubasa/proprietary/lib/sysmon/sysmon_usb_current_limit_level.so:system/lib/sysmon/sysmon_usb_current_limit_level.so \
-    vendor/sony/tsubasa/proprietary/lib/sysmon/sysmon_wlan_limit.so:system/lib/sysmon/sysmon_wlan_limit.so \
-    vendor/sony/tsubasa/proprietary/lib/sysmon/sysmon_xo_therm.so:system/lib/sysmon/sysmon_xo_therm.so \
+    vendor/sony/tsubasa/proprietary/lib/libxml.so:system/lib/libxml.so \
     vendor/sony/tsubasa/proprietary/vendor/camera/APT00YP1.dat:system/vendor/camera/APT00YP1.dat \
     vendor/sony/tsubasa/proprietary/vendor/camera/KMO13BS0.dat:system/vendor/camera/KMO13BS0.dat \
     vendor/sony/tsubasa/proprietary/vendor/camera/KMO13BS0_BU6456.dat:system/vendor/camera/KMO13BS0_BU6456.dat \
