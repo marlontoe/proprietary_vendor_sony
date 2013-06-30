@@ -44,6 +44,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/nozomi/proprietary/bin/ta_reader:system/bin/ta_reader \
     vendor/sony/nozomi/proprietary/bin/ta_rmt_service:system/bin/ta_rmt_service \
     vendor/sony/nozomi/proprietary/bin/tad:system/bin/tad \
+    vendor/sony/nozomi/proprietary/bin/time_daemon:system/bin/time_daemon \
     vendor/sony/nozomi/proprietary/bin/thermald:system/bin/thermald \
     vendor/sony/nozomi/proprietary/bin/updatemiscta:system/bin/updatemiscta \
     vendor/sony/nozomi/proprietary/bin/wait4tad:system/bin/wait4tad \
