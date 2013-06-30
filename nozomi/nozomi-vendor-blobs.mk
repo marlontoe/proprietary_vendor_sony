@@ -1,4 +1,5 @@
 # Copyright (C) 2011 The CyanogenMod Project
+# Copyright (C) 2013 OpenSEMC
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -89,7 +90,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/nozomi/proprietary/etc/firmware/tzapps.b02:system/etc/firmware/tzapps.b02 \
     vendor/sony/nozomi/proprietary/etc/firmware/tzapps.mdt:system/etc/firmware/tzapps.mdt \
     vendor/sony/nozomi/proprietary/etc/firmware/vidc_1080p.fw:system/etc/firmware/vidc_1080p.fw \
-    vendor/sony/mint/proprietary/etc/firmware/vidcfw.elf:system/etc/firmware/vidcfw.elf \
+    vendor/sony/nozomi/proprietary/etc/firmware/vidcfw.elf:system/etc/firmware/vidcfw.elf \
     vendor/sony/nozomi/proprietary/etc/flashled_calc_parameters.cfg:system/etc/flashled_calc_parameters.cfg \
     vendor/sony/nozomi/proprietary/etc/permissions/com.dsi.ant.antradio_library.xml:system/etc/permissions/com.dsi.ant.antradio_library.xml \
     vendor/sony/nozomi/proprietary/etc/sensors.conf:system/etc/sensors.conf \
@@ -112,12 +113,12 @@ PRODUCT_COPY_FILES += \
     vendor/sony/nozomi/proprietary/lib/libcald_pal.so:system/lib/libcald_pal.so \
     vendor/sony/nozomi/proprietary/lib/libcald_server.so:system/lib/libcald_server.so \
     vendor/sony/nozomi/proprietary/lib/libcald_util.so:system/lib/libcald_util.so \
-    vendor/sony/nozomi/proprietary/lib/libcamera_client.so:system/lib/libcamera_client.so \
     vendor/sony/nozomi/proprietary/lib/libcamera_clientsemc.so:system/lib/libcamera_clientsemc.so \
     vendor/sony/nozomi/proprietary/lib/libcameraextensionclient.so:system/lib/libcameraextensionclient.so \
     vendor/sony/nozomi/proprietary/lib/libcameraextensionjni.so:system/lib/libcameraextensionjni.so \
     vendor/sony/nozomi/proprietary/lib/libcameraextensionservice.so:system/lib/libcameraextensionservice.so \
     vendor/sony/nozomi/proprietary/lib/libcameralight.so:system/lib/libcameralight.so \
+    vendor/sony/nozomi/proprietary/lib/libcameraservice.so:system/lib/libcameraservice.so \
     vendor/sony/nozomi/proprietary/lib/libdiag.so:system/lib/libdiag.so \
     vendor/sony/nozomi/proprietary/lib/libdsi_netctrl.so:system/lib/libdsi_netctrl.so \
     vendor/sony/nozomi/proprietary/lib/libdsm.so:system/lib/libdsm.so \
@@ -133,6 +134,13 @@ PRODUCT_COPY_FILES += \
     vendor/sony/nozomi/proprietary/lib/libmllite.so:system/lib/libmllite.so \
     vendor/sony/nozomi/proprietary/lib/libmlplatform.so:system/lib/libmlplatform.so \
     vendor/sony/nozomi/proprietary/lib/libmm-color-convertor.so:system/lib/libmm-color-convertor.so \
+    vendor/sony/nozomi/proprietary/lib/libmmcamera_faceproc.so:system/lib/libmmcamera_faceproc.so \
+    vendor/sony/nozomi/proprietary/lib/libmmcamera_frameproc.so:system/lib/libmmcamera_frameproc.so \
+    vendor/sony/nozomi/proprietary/lib/libmmcamera_hdr_lib.so:system/lib/libmmcamera_hdr_lib.so \
+    vendor/sony/nozomi/proprietary/lib/libmmcamera_image_stab.so:system/lib/libmmcamera_image_stab.so \
+    vendor/sony/nozomi/proprietary/lib/libmmcamera_interface2.so:system/lib/libmmcamera_interface2.so \
+    vendor/sony/nozomi/proprietary/lib/libmmcamera_statsproc31.so:system/lib/libmmcamera_statsproc31.so \
+    vendor/sony/nozomi/proprietary/lib/libmmcamera_wavelet_lib.so:system/lib/libmmcamera_wavelet_lib.so \
     vendor/sony/nozomi/proprietary/lib/libmmipl.so:system/lib/libmmipl.so \
     vendor/sony/nozomi/proprietary/lib/libmmjpeg.so:system/lib/libmmjpeg.so \
     vendor/sony/nozomi/proprietary/lib/libmmjps.so:system/lib/libmmjps.so \
@@ -147,15 +155,18 @@ PRODUCT_COPY_FILES += \
     vendor/sony/nozomi/proprietary/lib/liboncrpc.so:system/lib/liboncrpc.so \
     vendor/sony/nozomi/proprietary/lib/libprotobuf-c.so:system/lib/libprotobuf-c.so \
     vendor/sony/nozomi/proprietary/lib/libqc-opt.so:system/lib/libqc-opt.so \
+    vendor/sony/nozomi/proprietary/lib/libqcci_legacy.so:system/lib/libqcci_legacy.so \
     vendor/sony/nozomi/proprietary/lib/libqdi.so:system/lib/libqdi.so \
     vendor/sony/nozomi/proprietary/lib/libqdp.so:system/lib/libqdp.so \
     vendor/sony/nozomi/proprietary/lib/libqmi.so:system/lib/libqmi.so \
+    vendor/sony/nozomi/proprietary/lib/libqmi_client_qmux.so:system/lib/libqmi_client_qmux.so \
     vendor/sony/nozomi/proprietary/lib/libqmiservices.so:system/lib/libqmiservices.so \
     vendor/sony/nozomi/proprietary/lib/libqueue.so:system/lib/libqueue.so \
     vendor/sony/nozomi/proprietary/lib/libril-qc-qmi-1.so:system/lib/libril-qc-qmi-1.so \
     vendor/sony/nozomi/proprietary/lib/libril.so:system/lib/libril.so \
     vendor/sony/nozomi/proprietary/lib/libs1sl.so:system/lib/libs1sl.so \
-    vendor/sony/nozomi/proprietary/lib/libsurfaceflinger_client.so:system/lib/libsurfaceflinger_client.so \
+    vendor/sony/nozomi/proprietary/lib/libsensors_akm8972.so:system/lib/libsensors_akm8972.so \
+    vendor/sony/nozomi/proprietary/lib/libsys-utils.so:system/lib/libsys-utils.so \
     vendor/sony/nozomi/proprietary/lib/libta.so:system/lib/libta.so \
     vendor/sony/nozomi/proprietary/lib/libta_rmt_clnt.so:system/lib/libta_rmt_clnt.so \
     vendor/sony/nozomi/proprietary/lib/libthermal_mitigation.so:system/lib/libthermal_mitigation.so \
@@ -172,4 +183,5 @@ PRODUCT_COPY_FILES += \
     vendor/sony/nozomi/proprietary/vendor/camera/STW01BM0.dat:system/vendor/camera/STW01BM0.dat \
     vendor/sony/nozomi/proprietary/vendor/camera/flash.dat:system/vendor/camera/flash.dat \
     vendor/sony/nozomi/proprietary/vendor/camera/product.dat:system/vendor/camera/product.dat \
-    vendor/sony/nozomi/proprietary/vendor/firmware/libpn544_fw_c2.so:system/vendor/firmware/libpn544_fw.so
+    vendor/sony/nozomi/proprietary/vendor/firmware/libpn544_fw_c2.so:system/vendor/firmware/libpn544_c2.so \
+    vendor/sony/nozomi/proprietary/vendor/firmware/libpn544_fw_c3.so:system/vendor/firmware/libpn544_c3.so
