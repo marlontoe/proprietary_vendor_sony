@@ -165,6 +165,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/nozomi/proprietary/lib/libqmi.so:system/lib/libqmi.so \
     vendor/sony/nozomi/proprietary/lib/libqmi_client_qmux.so:system/lib/libqmi_client_qmux.so \
     vendor/sony/nozomi/proprietary/lib/libqmiservices.so:system/lib/libqmiservices.so \
+    vendor/sony/nozomi/proprietary/lib/libQSEEComAPI.so:system/lib/libQSEEComAPI.so \
     vendor/sony/nozomi/proprietary/lib/libqueue.so:system/lib/libqueue.so \
     vendor/sony/nozomi/proprietary/lib/libril-qc-qmi-1.so:system/lib/libril-qc-qmi-1.so \
     vendor/sony/nozomi/proprietary/lib/libril.so:system/lib/libril.so \
