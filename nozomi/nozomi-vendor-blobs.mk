@@ -27,6 +27,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/nozomi/proprietary/app/antstatenotifer.apk:system/app/antstatenotifer.apk \
     vendor/sony/nozomi/proprietary/bin/bq275xx_fwloader:system/bin/bq275xx_fwloader \
     vendor/sony/nozomi/proprietary/bin/btld:system/bin/btld \
+    vendor/sony/nozomi/proprietary/bin/bridgemgrd:system/bin/bridgemgrd \
     vendor/sony/nozomi/proprietary/bin/cal_data_manager:system/bin/cal_data_manager \
     vendor/sony/nozomi/proprietary/bin/chargemon:system/bin/chargemon \
     vendor/sony/nozomi/proprietary/bin/clearpad_fwloader:system/bin/clearpad_fwloader \
@@ -35,6 +36,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/nozomi/proprietary/bin/netmgrd:system/bin/netmgrd \
     vendor/sony/nozomi/proprietary/bin/nvcustomizer:system/bin/nvcustomizer \
     vendor/sony/nozomi/proprietary/bin/nvimport:system/bin/nvimport \
+    vendor/sony/nozomi/proprietary/bin/port-bridge:system/bin/port-bridge \
     vendor/sony/nozomi/proprietary/bin/qmuxd:system/bin/qmuxd \
     vendor/sony/nozomi/proprietary/bin/rild:system/bin/rild \
     vendor/sony/nozomi/proprietary/bin/rmt_storage:system/bin/rmt_storage \
