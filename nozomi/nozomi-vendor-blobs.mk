@@ -47,6 +47,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/nozomi/proprietary/bin/time_daemon:system/bin/time_daemon \
     vendor/sony/nozomi/proprietary/bin/thermald:system/bin/thermald \
     vendor/sony/nozomi/proprietary/bin/updatemiscta:system/bin/updatemiscta \
+    vendor/sony/nozomi/proprietary/bin/v4l2-qcamera-app:system/bin/v4l2-qcamera-app \
     vendor/sony/nozomi/proprietary/bin/wait4tad:system/bin/wait4tad \
     vendor/sony/nozomi/proprietary/etc/clearpad_fwloader.sh:system/etc/clearpad_fwloader.sh \
     vendor/sony/nozomi/proprietary/etc/fast-dormancy/fd_custm_conf.txt:system/etc/fast-dormancy/fd_custm_conf.txt \
