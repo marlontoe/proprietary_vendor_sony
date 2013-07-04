@@ -1,4 +1,5 @@
 # Copyright (C) 2011 The CyanogenMod Project
+# Copyright (C) 2013 OpenSEMC
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -26,6 +27,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/hikari/proprietary/app/antstatenotifer.apk:system/app/antstatenotifer.apk \
     vendor/sony/hikari/proprietary/bin/bq275xx_fwloader:system/bin/bq275xx_fwloader \
     vendor/sony/hikari/proprietary/bin/btld:system/bin/btld \
+    vendor/sony/hikari/proprietary/bin/bridgemgrd:system/bin/bridgemgrd \
     vendor/sony/hikari/proprietary/bin/cal_data_manager:system/bin/cal_data_manager \
     vendor/sony/hikari/proprietary/bin/chargemon:system/bin/chargemon \
     vendor/sony/hikari/proprietary/bin/clearpad_fwloader:system/bin/clearpad_fwloader \
@@ -34,6 +36,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/hikari/proprietary/bin/netmgrd:system/bin/netmgrd \
     vendor/sony/hikari/proprietary/bin/nvcustomizer:system/bin/nvcustomizer \
     vendor/sony/hikari/proprietary/bin/nvimport:system/bin/nvimport \
+    vendor/sony/hikari/proprietary/bin/port-bridge:system/bin/port-bridge \
     vendor/sony/hikari/proprietary/bin/qmuxd:system/bin/qmuxd \
     vendor/sony/hikari/proprietary/bin/rild:system/bin/rild \
     vendor/sony/hikari/proprietary/bin/rmt_storage:system/bin/rmt_storage \
@@ -43,8 +46,10 @@ PRODUCT_COPY_FILES += \
     vendor/sony/hikari/proprietary/bin/ta_reader:system/bin/ta_reader \
     vendor/sony/hikari/proprietary/bin/ta_rmt_service:system/bin/ta_rmt_service \
     vendor/sony/hikari/proprietary/bin/tad:system/bin/tad \
+    vendor/sony/hikari/proprietary/bin/time_daemon:system/bin/time_daemon \
     vendor/sony/hikari/proprietary/bin/thermald:system/bin/thermald \
     vendor/sony/hikari/proprietary/bin/updatemiscta:system/bin/updatemiscta \
+    vendor/sony/hikari/proprietary/bin/v4l2-qcamera-app:system/bin/v4l2-qcamera-app \
     vendor/sony/hikari/proprietary/bin/wait4tad:system/bin/wait4tad \
     vendor/sony/hikari/proprietary/etc/clearpad_fwloader.sh:system/etc/clearpad_fwloader.sh \
     vendor/sony/hikari/proprietary/etc/fast-dormancy/fd_custm_conf.txt:system/etc/fast-dormancy/fd_custm_conf.txt \
@@ -58,6 +63,11 @@ PRODUCT_COPY_FILES += \
     vendor/sony/hikari/proprietary/etc/firmware/dsps_fluid.b02:system/etc/firmware/dsps_fluid.b02 \
     vendor/sony/hikari/proprietary/etc/firmware/dsps_fluid.b03:system/etc/firmware/dsps_fluid.b03 \
     vendor/sony/hikari/proprietary/etc/firmware/dsps_fluid.mdt:system/etc/firmware/dsps_fluid.mdt \
+    vendor/sony/hikari/proprietary/etc/firmware/fw_bcm4330b1.bin:system/etc/firmware/fw_bcm4330b1.bin \
+    vendor/sony/hikari/proprietary/etc/firmware/fw_bcm4330b1_apsta.bin:system/etc/firmware/fw_bcm4330b1_apsta.bin \
+    vendor/sony/hikari/proprietary/etc/firmware/fw_bcm4330b2.bin:system/etc/firmware/fw_bcm4330b2.bin \
+    vendor/sony/hikari/proprietary/etc/firmware/fw_bcm4330b2_apsta.bin:system/etc/firmware/fw_bcm4330b2_apsta.bin \
+    vendor/sony/hikari/proprietary/etc/firmware/fw_bcm4330b2_p2p.bin:system/etc/firmware/fw_bcm4330b2_p2p.bin \
     vendor/sony/hikari/proprietary/etc/firmware/modem.b00:system/etc/firmware/modem.b00 \
     vendor/sony/hikari/proprietary/etc/firmware/modem.b01:system/etc/firmware/modem.b01 \
     vendor/sony/hikari/proprietary/etc/firmware/modem.b02:system/etc/firmware/modem.b02 \
@@ -108,12 +118,12 @@ PRODUCT_COPY_FILES += \
     vendor/sony/hikari/proprietary/lib/libcald_pal.so:system/lib/libcald_pal.so \
     vendor/sony/hikari/proprietary/lib/libcald_server.so:system/lib/libcald_server.so \
     vendor/sony/hikari/proprietary/lib/libcald_util.so:system/lib/libcald_util.so \
-    vendor/sony/hikari/proprietary/lib/libcamera_client.so:system/lib/libcamera_client.so \
     vendor/sony/hikari/proprietary/lib/libcamera_clientsemc.so:system/lib/libcamera_clientsemc.so \
     vendor/sony/hikari/proprietary/lib/libcameraextensionclient.so:system/lib/libcameraextensionclient.so \
     vendor/sony/hikari/proprietary/lib/libcameraextensionjni.so:system/lib/libcameraextensionjni.so \
     vendor/sony/hikari/proprietary/lib/libcameraextensionservice.so:system/lib/libcameraextensionservice.so \
     vendor/sony/hikari/proprietary/lib/libcameralight.so:system/lib/libcameralight.so \
+    vendor/sony/hikari/proprietary/lib/libcameraservice.so:system/lib/libcameraservice.so \
     vendor/sony/hikari/proprietary/lib/libdiag.so:system/lib/libdiag.so \
     vendor/sony/hikari/proprietary/lib/libdsi_netctrl.so:system/lib/libdsi_netctrl.so \
     vendor/sony/hikari/proprietary/lib/libdsm.so:system/lib/libdsm.so \
@@ -129,6 +139,13 @@ PRODUCT_COPY_FILES += \
     vendor/sony/hikari/proprietary/lib/libmllite.so:system/lib/libmllite.so \
     vendor/sony/hikari/proprietary/lib/libmlplatform.so:system/lib/libmlplatform.so \
     vendor/sony/hikari/proprietary/lib/libmm-color-convertor.so:system/lib/libmm-color-convertor.so \
+    vendor/sony/hikari/proprietary/lib/libmmcamera_faceproc.so:system/lib/libmmcamera_faceproc.so \
+    vendor/sony/hikari/proprietary/lib/libmmcamera_frameproc.so:system/lib/libmmcamera_frameproc.so \
+    vendor/sony/hikari/proprietary/lib/libmmcamera_hdr_lib.so:system/lib/libmmcamera_hdr_lib.so \
+    vendor/sony/hikari/proprietary/lib/libmmcamera_image_stab.so:system/lib/libmmcamera_image_stab.so \
+    vendor/sony/hikari/proprietary/lib/libmmcamera_interface2.so:system/lib/libmmcamera_interface2.so \
+    vendor/sony/hikari/proprietary/lib/libmmcamera_statsproc31.so:system/lib/libmmcamera_statsproc31.so \
+    vendor/sony/hikari/proprietary/lib/libmmcamera_wavelet_lib.so:system/lib/libmmcamera_wavelet_lib.so \
     vendor/sony/hikari/proprietary/lib/libmmipl.so:system/lib/libmmipl.so \
     vendor/sony/hikari/proprietary/lib/libmmjpeg.so:system/lib/libmmjpeg.so \
     vendor/sony/hikari/proprietary/lib/libmmjps.so:system/lib/libmmjps.so \
@@ -143,15 +160,18 @@ PRODUCT_COPY_FILES += \
     vendor/sony/hikari/proprietary/lib/liboncrpc.so:system/lib/liboncrpc.so \
     vendor/sony/hikari/proprietary/lib/libprotobuf-c.so:system/lib/libprotobuf-c.so \
     vendor/sony/hikari/proprietary/lib/libqc-opt.so:system/lib/libqc-opt.so \
+    vendor/sony/hikari/proprietary/lib/libqcci_legacy.so:system/lib/libqcci_legacy.so \
     vendor/sony/hikari/proprietary/lib/libqdi.so:system/lib/libqdi.so \
     vendor/sony/hikari/proprietary/lib/libqdp.so:system/lib/libqdp.so \
     vendor/sony/hikari/proprietary/lib/libqmi.so:system/lib/libqmi.so \
+    vendor/sony/hikari/proprietary/lib/libqmi_client_qmux.so:system/lib/libqmi_client_qmux.so \
     vendor/sony/hikari/proprietary/lib/libqmiservices.so:system/lib/libqmiservices.so \
     vendor/sony/hikari/proprietary/lib/libqueue.so:system/lib/libqueue.so \
     vendor/sony/hikari/proprietary/lib/libril-qc-qmi-1.so:system/lib/libril-qc-qmi-1.so \
     vendor/sony/hikari/proprietary/lib/libril.so:system/lib/libril.so \
     vendor/sony/hikari/proprietary/lib/libs1sl.so:system/lib/libs1sl.so \
-    vendor/sony/hikari/proprietary/lib/libsurfaceflinger_client.so:system/lib/libsurfaceflinger_client.so \
+    vendor/sony/hikari/proprietary/lib/libsensors_akm8972.so:system/lib/libsensors_akm8972.so \
+    vendor/sony/hikari/proprietary/lib/libsys-utils.so:system/lib/libsys-utils.so \
     vendor/sony/hikari/proprietary/lib/libsys-utils.so:system/lib/libsys-utils.so \
     vendor/sony/hikari/proprietary/lib/libta.so:system/lib/libta.so \
     vendor/sony/hikari/proprietary/lib/libta_rmt_clnt.so:system/lib/libta_rmt_clnt.so \
@@ -169,4 +189,5 @@ PRODUCT_COPY_FILES += \
     vendor/sony/hikari/proprietary/vendor/camera/STW01BM0.dat:system/vendor/camera/STW01BM0.dat \
     vendor/sony/hikari/proprietary/vendor/camera/flash.dat:system/vendor/camera/flash.dat \
     vendor/sony/hikari/proprietary/vendor/camera/product.dat:system/vendor/camera/product.dat \
-    vendor/sony/hikari/proprietary/vendor/firmware/libpn544_fw_c2.so:system/vendor/firmware/libpn544_fw.so
+    vendor/sony/hikari/proprietary/vendor/firmware/libpn544_fw_c2.so:system/vendor/firmware/libpn544_c2.so \
+    vendor/sony/hikari/proprietary/vendor/firmware/libpn544_fw_c3.so:system/vendor/firmware/libpn544_c3.so
