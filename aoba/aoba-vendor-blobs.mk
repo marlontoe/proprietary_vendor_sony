@@ -22,9 +22,6 @@ PRODUCT_COPY_FILES := \
     vendor/sony/aoba/proprietary/lib/libacdbmapper.so:obj/lib/libacdbmapper.so
 
 PRODUCT_COPY_FILES += \
-    vendor/sony/aoba/proprietary/app/AntHalService.apk:system/app/AntHalService.apk \
-    vendor/sony/aoba/proprietary/app/antradioservice.apk:system/app/antradioservice.apk \
-    vendor/sony/aoba/proprietary/app/antstatenotifer.apk:system/app/antstatenotifer.apk \
     vendor/sony/aoba/proprietary/bin/bq275xx_fwloader:system/bin/bq275xx_fwloader \
     vendor/sony/aoba/proprietary/bin/btld:system/bin/btld \
     vendor/sony/aoba/proprietary/bin/bridgemgrd:system/bin/bridgemgrd \
@@ -207,3 +204,9 @@ PRODUCT_COPY_FILES += \
     vendor/sony/aoba/proprietary/vendor/camera/product.dat:system/vendor/camera/product.dat \
     vendor/sony/aoba/proprietary/vendor/firmware/libpn544_fw_c2.so:system/vendor/firmware/libpn544_c2.so \
     vendor/sony/aoba/proprietary/vendor/firmware/libpn544_fw_c3.so:system/vendor/firmware/libpn544_c3.so
+
+# ANT+
+PRODUCT_PACKAGES += \
+    AntHalService \
+    antradioservice \
+    antstatenotifer

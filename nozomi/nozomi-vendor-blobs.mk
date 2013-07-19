@@ -22,9 +22,6 @@ PRODUCT_COPY_FILES := \
     vendor/sony/nozomi/proprietary/lib/libacdbmapper.so:obj/lib/libacdbmapper.so
 
 PRODUCT_COPY_FILES += \
-    vendor/sony/nozomi/proprietary/app/AntHalService.apk:system/app/AntHalService.apk \
-    vendor/sony/nozomi/proprietary/app/antradioservice.apk:system/app/antradioservice.apk \
-    vendor/sony/nozomi/proprietary/app/antstatenotifer.apk:system/app/antstatenotifer.apk \
     vendor/sony/nozomi/proprietary/bin/bq275xx_fwloader:system/bin/bq275xx_fwloader \
     vendor/sony/nozomi/proprietary/bin/btld:system/bin/btld \
     vendor/sony/nozomi/proprietary/bin/bridgemgrd:system/bin/bridgemgrd \
@@ -196,3 +193,9 @@ PRODUCT_COPY_FILES += \
     vendor/sony/nozomi/proprietary/vendor/camera/product.dat:system/vendor/camera/product.dat \
     vendor/sony/nozomi/proprietary/vendor/firmware/libpn544_fw_c2.so:system/vendor/firmware/libpn544_c2.so \
     vendor/sony/nozomi/proprietary/vendor/firmware/libpn544_fw_c3.so:system/vendor/firmware/libpn544_c3.so
+
+# ANT+
+PRODUCT_PACKAGES += \
+    AntHalService \
+    antradioservice \
+    antstatenotifer
