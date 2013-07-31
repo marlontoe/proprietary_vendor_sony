@@ -29,6 +29,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/hikari/proprietary/bin/chargemon:system/bin/chargemon \
     vendor/sony/hikari/proprietary/bin/clearpad_fwloader:system/bin/clearpad_fwloader \
     vendor/sony/hikari/proprietary/bin/fast-dormancy:system/bin/fast-dormancy \
+    vendor/sony/hikari/proprietary/bin/hostapd:system/bin/hostapd \
     vendor/sony/hikari/proprietary/bin/mpdecision:system/bin/mpdecision \
     vendor/sony/hikari/proprietary/bin/netmgrd:system/bin/netmgrd \
     vendor/sony/hikari/proprietary/bin/nvcustomizer:system/bin/nvcustomizer \

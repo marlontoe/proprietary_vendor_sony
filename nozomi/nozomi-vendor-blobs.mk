@@ -29,6 +29,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/nozomi/proprietary/bin/chargemon:system/bin/chargemon \
     vendor/sony/nozomi/proprietary/bin/clearpad_fwloader:system/bin/clearpad_fwloader \
     vendor/sony/nozomi/proprietary/bin/fast-dormancy:system/bin/fast-dormancy \
+    vendor/sony/nozomi/proprietary/bin/hostapd:system/bin/hostapd \
     vendor/sony/nozomi/proprietary/bin/mpdecision:system/bin/mpdecision \
     vendor/sony/nozomi/proprietary/bin/netmgrd:system/bin/netmgrd \
     vendor/sony/nozomi/proprietary/bin/nvcustomizer:system/bin/nvcustomizer \
