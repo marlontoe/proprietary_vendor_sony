@@ -108,10 +108,8 @@ PRODUCT_COPY_FILES += \
     vendor/sony/aoba/proprietary/etc/firmware/tzapps.mdt:system/etc/firmware/tzapps.mdt \
     vendor/sony/aoba/proprietary/etc/firmware/vidc_1080p.fw:system/etc/firmware/vidc_1080p.fw \
     vendor/sony/aoba/proprietary/etc/flashled_calc_parameters.cfg:system/etc/flashled_calc_parameters.cfg \
-    vendor/sony/aoba/proprietary/etc/permissions/com.dsi.ant.antradio_library.xml:system/etc/permissions/com.dsi.ant.antradio_library.xml \
     vendor/sony/aoba/proprietary/etc/sensors.conf:system/etc/sensors.conf \
     vendor/sony/aoba/proprietary/etc/wifi/calibration:system/etc/wifi/calibration \
-    vendor/sony/aoba/proprietary/framework/com.dsi.ant.antradio_library.jar:system/framework/com.dsi.ant.antradio_library.jar \
     vendor/sony/aoba/proprietary/lib/hw/camera.msm8660.so:system/lib/hw/camera.msm8660.so \
     vendor/sony/aoba/proprietary/lib/hw/gps.msm8660.so:system/lib/hw/gps.msm8660.so \
     vendor/sony/aoba/proprietary/lib/hw/nfc.msm8660.so:system/lib/hw/nfc.msm8660.so \
@@ -121,7 +119,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/aoba/proprietary/lib/libacdbloader.so:system/lib/libacdbloader.so \
     vendor/sony/aoba/proprietary/lib/libacdbmapper.so:system/lib/libacdbmapper.so \
     vendor/sony/aoba/proprietary/lib/libals.so:system/lib/libals.so \
-    vendor/sony/aoba/proprietary/lib/libanthal.so:system/lib/libanthal.so \
     vendor/sony/aoba/proprietary/lib/libaudcal.so:system/lib/libaudcal.so \
     vendor/sony/aoba/proprietary/lib/libaudioalsa.so:system/lib/libaudioalsa.so \
     vendor/sony/aoba/proprietary/lib/libcald_client.so:system/lib/libcald_client.so \
@@ -207,7 +204,12 @@ PRODUCT_COPY_FILES += \
     vendor/sony/aoba/proprietary/vendor/firmware/libpn544_fw_c3.so:system/vendor/firmware/libpn544_c3.so
 
 # ANT+
-PRODUCT_PACKAGES += \
-    AntHalService \
-    antradioservice \
-    antstatenotifer
+#PRODUCT_PACKAGES += \
+#    AntHalService \
+#    antradioservice \
+#    antstatenotifer
+
+#PRODUCT_COPY_FILES := \
+#    vendor/sony/aoba/proprietary/etc/permissions/com.dsi.ant.antradio_library.xml:system/etc/permissions/com.dsi.ant.antradio_library.xml \
+#    vendor/sony/aoba/proprietary/framework/com.dsi.ant.antradio_library.jar:system/framework/com.dsi.ant.antradio_library.jar \
+#    vendor/sony/aoba/proprietary/lib/libanthal.so:system/lib/libanthal.so

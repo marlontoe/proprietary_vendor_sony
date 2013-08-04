@@ -99,10 +99,8 @@ PRODUCT_COPY_FILES += \
     vendor/sony/nozomi/proprietary/etc/firmware/vidc_1080p.fw:system/etc/firmware/vidc_1080p.fw \
     vendor/sony/nozomi/proprietary/etc/firmware/vidcfw.elf:system/etc/firmware/vidcfw.elf \
     vendor/sony/nozomi/proprietary/etc/flashled_calc_parameters.cfg:system/etc/flashled_calc_parameters.cfg \
-    vendor/sony/nozomi/proprietary/etc/permissions/com.dsi.ant.antradio_library.xml:system/etc/permissions/com.dsi.ant.antradio_library.xml \
     vendor/sony/nozomi/proprietary/etc/sensors.conf:system/etc/sensors.conf \
     vendor/sony/nozomi/proprietary/etc/wifi/calibration:system/etc/wifi/calibration \
-    vendor/sony/nozomi/proprietary/framework/com.dsi.ant.antradio_library.jar:system/framework/com.dsi.ant.antradio_library.jar \
     vendor/sony/nozomi/proprietary/lib/hw/camera.msm8660.so:system/lib/hw/camera.msm8660.so \
     vendor/sony/nozomi/proprietary/lib/hw/gps.msm8660.so:system/lib/hw/gps.msm8660.so \
     vendor/sony/nozomi/proprietary/lib/hw/nfc.msm8660.so:system/lib/hw/nfc.msm8660.so \
@@ -112,7 +110,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/nozomi/proprietary/lib/libacdbloader.so:system/lib/libacdbloader.so \
     vendor/sony/nozomi/proprietary/lib/libacdbmapper.so:system/lib/libacdbmapper.so \
     vendor/sony/nozomi/proprietary/lib/libals.so:system/lib/libals.so \
-    vendor/sony/nozomi/proprietary/lib/libanthal.so:system/lib/libanthal.so \
     vendor/sony/nozomi/proprietary/lib/libaudcal.so:system/lib/libaudcal.so \
     vendor/sony/nozomi/proprietary/lib/libaudioalsa.so:system/lib/libaudioalsa.so \
     vendor/sony/nozomi/proprietary/lib/libcald_client.so:system/lib/libcald_client.so \
@@ -196,7 +193,12 @@ PRODUCT_COPY_FILES += \
     vendor/sony/nozomi/proprietary/vendor/firmware/libpn544_fw_c3.so:system/vendor/firmware/libpn544_c3.so
 
 # ANT+
-PRODUCT_PACKAGES += \
-    AntHalService \
-    antradioservice \
-    antstatenotifer
+#PRODUCT_PACKAGES += \
+#    AntHalService \
+#    antradioservice \
+#    antstatenotifer
+
+#PRODUCT_COPY_FILES := \
+#    vendor/sony/nozomi/proprietary/etc/permissions/com.dsi.ant.antradio_library.xml:system/etc/permissions/com.dsi.ant.antradio_library.xml \
+#    vendor/sony/nozomi/proprietary/framework/com.dsi.ant.antradio_library.jar:system/framework/com.dsi.ant.antradio_library.jar \
+#    vendor/sony/nozomi/proprietary/lib/libanthal.so:system/lib/libanthal.so
