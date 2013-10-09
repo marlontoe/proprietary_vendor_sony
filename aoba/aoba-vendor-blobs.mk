@@ -124,7 +124,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/aoba/proprietary/lib/libcald_client.so:system/lib/libcald_client.so \
     vendor/sony/aoba/proprietary/lib/libcald_hal.so:system/lib/libcald_hal.so \
     vendor/sony/aoba/proprietary/lib/libcald_imageutil.so:system/lib/libcald_imageutil.so \
-    vendor/sony/aoba/proprietary/lib/libcald_pal.so:system/lib/libcald_pal.so \
     vendor/sony/aoba/proprietary/lib/libcald_server.so:system/lib/libcald_server.so \
     vendor/sony/aoba/proprietary/lib/libcald_util.so:system/lib/libcald_util.so \
     vendor/sony/aoba/proprietary/lib/libcamera_clientsemc.so:system/lib/libcamera_clientsemc.so \
@@ -167,7 +166,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/aoba/proprietary/lib/libnv_fusion.so:system/lib/libnv_fusion.so \
     vendor/sony/aoba/proprietary/lib/liboem_rapi.so:system/lib/liboem_rapi.so \
     vendor/sony/aoba/proprietary/lib/liboem_rapi_fusion.so:system/lib/liboem_rapi_fusion.so \
-    vendor/sony/aoba/proprietary/lib/liboemcamera.so:system/lib/liboemcamera.so \
     vendor/sony/aoba/proprietary/lib/liboncrpc.so:system/lib/liboncrpc.so \
     vendor/sony/aoba/proprietary/lib/libprotobuf-c.so:system/lib/libprotobuf-c.so \
     vendor/sony/aoba/proprietary/lib/libqcci_legacy.so:system/lib/libqcci_legacy.so \
@@ -203,6 +201,19 @@ PRODUCT_COPY_FILES += \
     vendor/sony/aoba/proprietary/vendor/camera/product.dat:system/vendor/camera/product.dat \
     vendor/sony/aoba/proprietary/vendor/firmware/libpn544_fw_c2.so:system/vendor/firmware/libpn544_c2.so \
     vendor/sony/aoba/proprietary/vendor/firmware/libpn544_fw_c3.so:system/vendor/firmware/libpn544_c3.so
+
+# Camera blobs - beware that 0_211 has borked 1080p recording,
+# 1_96 has long 'warmup' time for the preview to actually come up
+ifeq ($(FUJI_USE_0_211_CAMERA_BLOBS),true)
+PRODUCT_COPY_FILES += \
+    vendor/sony/aoba/proprietary/lib/cam_0_211/libcald_pal.so:system/lib/libcald_pal.so \
+    vendor/sony/aoba/proprietary/lib/cam_0_211/liboemcamera.so:system/lib/liboemcamera.so
+endif
+ifeq ($(FUJI_USE_1_96_CAMERA_BLOBS),true)
+PRODUCT_COPY_FILES += \
+    vendor/sony/aoba/proprietary/lib/cam_1_96/libcald_pal.so:system/lib/libcald_pal.so \
+    vendor/sony/aoba/proprietary/lib/cam_1_96/liboemcamera.so:system/lib/liboemcamera.so
+endif
 
 # ANT+
 #PRODUCT_PACKAGES += \

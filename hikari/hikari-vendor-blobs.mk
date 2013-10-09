@@ -111,7 +111,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/hikari/proprietary/lib/libcald_client.so:system/lib/libcald_client.so \
     vendor/sony/hikari/proprietary/lib/libcald_hal.so:system/lib/libcald_hal.so \
     vendor/sony/hikari/proprietary/lib/libcald_imageutil.so:system/lib/libcald_imageutil.so \
-    vendor/sony/hikari/proprietary/lib/libcald_pal.so:system/lib/libcald_pal.so \
     vendor/sony/hikari/proprietary/lib/libcald_server.so:system/lib/libcald_server.so \
     vendor/sony/hikari/proprietary/lib/libcald_util.so:system/lib/libcald_util.so \
     vendor/sony/hikari/proprietary/lib/libcamera_clientsemc.so:system/lib/libcamera_clientsemc.so \
@@ -152,7 +151,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/hikari/proprietary/lib/libnetmgr.so:system/lib/libnetmgr.so \
     vendor/sony/hikari/proprietary/lib/libnv.so:system/lib/libnv.so \
     vendor/sony/hikari/proprietary/lib/liboem_rapi.so:system/lib/liboem_rapi.so \
-    vendor/sony/hikari/proprietary/lib/liboemcamera.so:system/lib/liboemcamera.so \
     vendor/sony/hikari/proprietary/lib/liboncrpc.so:system/lib/liboncrpc.so \
     vendor/sony/hikari/proprietary/lib/libprotobuf-c.so:system/lib/libprotobuf-c.so \
     vendor/sony/hikari/proprietary/lib/libqc-opt.so:system/lib/libqc-opt.so \
@@ -188,6 +186,19 @@ PRODUCT_COPY_FILES += \
     vendor/sony/hikari/proprietary/vendor/camera/product.dat:system/vendor/camera/product.dat \
     vendor/sony/hikari/proprietary/vendor/firmware/libpn544_fw_c2.so:system/vendor/firmware/libpn544_c2.so \
     vendor/sony/hikari/proprietary/vendor/firmware/libpn544_fw_c3.so:system/vendor/firmware/libpn544_c3.so
+
+# Camera blobs - beware that 0_211 has borked 1080p recording,
+# 1_96 has long 'warmup' time for the preview to actually come up
+ifeq ($(FUJI_USE_0_211_CAMERA_BLOBS),true)
+PRODUCT_COPY_FILES += \
+    vendor/sony/hikari/proprietary/lib/cam_0_211/libcald_pal.so:system/lib/libcald_pal.so \
+    vendor/sony/hikari/proprietary/lib/cam_0_211/liboemcamera.so:system/lib/liboemcamera.so
+endif
+ifeq ($(FUJI_USE_1_96_CAMERA_BLOBS),true)
+PRODUCT_COPY_FILES += \
+    vendor/sony/hikari/proprietary/lib/cam_1_96/libcald_pal.so:system/lib/libcald_pal.so \
+    vendor/sony/hikari/proprietary/lib/cam_1_96/liboemcamera.so:system/lib/liboemcamera.so
+endif
 
 # ANT+
 #PRODUCT_PACKAGES += \
