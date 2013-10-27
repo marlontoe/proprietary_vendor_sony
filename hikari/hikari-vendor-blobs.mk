@@ -188,16 +188,12 @@ PRODUCT_COPY_FILES += \
 
 # Camera blobs - beware that 0_211 has borked 1080p recording,
 # 1_96 has long 'warmup' time for the preview to actually come up
-ifeq ($(FUJI_USE_0_211_CAMERA_BLOBS),true)
-PRODUCT_COPY_FILES += \
-    vendor/sony/hikari/proprietary/lib/cam_0_211/libcald_pal.so:system/lib/libcald_pal.so \
-    vendor/sony/hikari/proprietary/lib/cam_0_211/liboemcamera.so:system/lib/liboemcamera.so
-endif
-ifeq ($(FUJI_USE_1_96_CAMERA_BLOBS),true)
+#PRODUCT_COPY_FILES += \
+#    vendor/sony/hikari/proprietary/lib/cam_0_211/libcald_pal.so:system/lib/libcald_pal.so \
+#    vendor/sony/hikari/proprietary/lib/cam_0_211/liboemcamera.so:system/lib/liboemcamera.so
 PRODUCT_COPY_FILES += \
     vendor/sony/hikari/proprietary/lib/cam_1_96/libcald_pal.so:system/lib/libcald_pal.so \
     vendor/sony/hikari/proprietary/lib/cam_1_96/liboemcamera.so:system/lib/liboemcamera.so
-endif
 
 # ANT+
 #PRODUCT_PACKAGES += \
