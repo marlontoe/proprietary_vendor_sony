@@ -118,7 +118,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/hikari/proprietary/lib/libcameraextensionjni.so:system/lib/libcameraextensionjni.so \
     vendor/sony/hikari/proprietary/lib/libcameraextensionservice.so:system/lib/libcameraextensionservice.so \
     vendor/sony/hikari/proprietary/lib/libcameralight.so:system/lib/libcameralight.so \
-    vendor/sony/hikari/proprietary/lib/libcameraservice.so:system/lib/libcameraservice.so \
     vendor/sony/hikari/proprietary/lib/libdiag.so:system/lib/libdiag.so \
     vendor/sony/hikari/proprietary/lib/libdsi_netctrl.so:system/lib/libdsi_netctrl.so \
     vendor/sony/hikari/proprietary/lib/libdsm.so:system/lib/libdsm.so \
