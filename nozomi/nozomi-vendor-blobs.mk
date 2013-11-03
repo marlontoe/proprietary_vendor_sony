@@ -122,7 +122,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/nozomi/proprietary/lib/libcameraextensionjni.so:system/lib/libcameraextensionjni.so \
     vendor/sony/nozomi/proprietary/lib/libcameraextensionservice.so:system/lib/libcameraextensionservice.so \
     vendor/sony/nozomi/proprietary/lib/libcameralight.so:system/lib/libcameralight.so \
-    vendor/sony/nozomi/proprietary/lib/libcameraservice.so:system/lib/libcameraservice.so \
     vendor/sony/nozomi/proprietary/lib/libdiag.so:system/lib/libdiag.so \
     vendor/sony/nozomi/proprietary/lib/libdsi_netctrl.so:system/lib/libdsi_netctrl.so \
     vendor/sony/nozomi/proprietary/lib/libdsm.so:system/lib/libdsm.so \

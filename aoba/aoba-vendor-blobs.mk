@@ -131,7 +131,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/aoba/proprietary/lib/libcameraextensionjni.so:system/lib/libcameraextensionjni.so \
     vendor/sony/aoba/proprietary/lib/libcameraextensionservice.so:system/lib/libcameraextensionservice.so \
     vendor/sony/aoba/proprietary/lib/libcameralight.so:system/lib/libcameralight.so \
-    vendor/sony/aoba/proprietary/lib/libcameraservice.so:system/lib/libcameraservice.so \
     vendor/sony/aoba/proprietary/lib/libdiag.so:system/lib/libdiag.so \
     vendor/sony/aoba/proprietary/lib/libdsi_netctrl.so:system/lib/libdsi_netctrl.so \
     vendor/sony/aoba/proprietary/lib/libdsm.so:system/lib/libdsm.so \
