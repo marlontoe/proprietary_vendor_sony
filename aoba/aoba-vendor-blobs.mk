@@ -202,12 +202,12 @@ PRODUCT_COPY_FILES += \
 
 # Camera blobs - beware that 0_211 has borked 1080p recording,
 # 1_96 has long 'warmup' time for the preview to actually come up
-#PRODUCT_COPY_FILES += \
-#    vendor/sony/aoba/proprietary/lib/cam_0_211/libcald_pal.so:system/lib/libcald_pal.so \
-#    vendor/sony/aoba/proprietary/lib/cam_0_211/liboemcamera.so:system/lib/liboemcamera.so
+# FIXME: This blob-mix should do well for now (fast start, 1080p)
 PRODUCT_COPY_FILES += \
-    vendor/sony/aoba/proprietary/lib/cam_1_96/libcald_pal.so:system/lib/libcald_pal.so \
-    vendor/sony/aoba/proprietary/lib/cam_1_96/liboemcamera.so:system/lib/liboemcamera.so
+    vendor/sony/nozomi/proprietary/lib/cam_0_211/libcald_pal.so:system/lib/libcald_pal.so \
+
+PRODUCT_COPY_FILES += \
+    vendor/sony/nozomi/proprietary/lib/cam_1_96/liboemcamera.so:system/lib/liboemcamera.so
 
 # ANT+
 #PRODUCT_PACKAGES += \
