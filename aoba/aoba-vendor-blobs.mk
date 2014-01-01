@@ -133,8 +133,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/aoba/proprietary/lib/libidd.so:system/lib/libidd.so \
     vendor/sony/aoba/proprietary/lib/libidl.so:system/lib/libidl.so \
     vendor/sony/aoba/proprietary/lib/libmiscta.so:system/lib/libmiscta.so \
-    vendor/sony/aoba/proprietary/lib/libmllite.so:system/lib/libmllite.so \
-    vendor/sony/aoba/proprietary/lib/libmlplatform.so:system/lib/libmlplatform.so \
     vendor/sony/aoba/proprietary/lib/libmm-color-convertor.so:system/lib/libmm-color-convertor.so \
     vendor/sony/aoba/proprietary/lib/libmmcamera_faceproc.so:system/lib/libmmcamera_faceproc.so \
     vendor/sony/aoba/proprietary/lib/libmmcamera_frameproc.so:system/lib/libmmcamera_frameproc.so \
@@ -146,7 +144,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/aoba/proprietary/lib/libmmjpeg.so:system/lib/libmmjpeg.so \
     vendor/sony/aoba/proprietary/lib/libmmmpo.so:system/lib/libmmmpo.so \
     vendor/sony/aoba/proprietary/lib/libmmstereo.so:system/lib/libmmstereo.so \
-    vendor/sony/aoba/proprietary/lib/libmpl.so:system/lib/libmpl.so \
     vendor/sony/aoba/proprietary/lib/libnetmgr.so:system/lib/libnetmgr.so \
     vendor/sony/aoba/proprietary/lib/libnv.so:system/lib/libnv.so \
     vendor/sony/aoba/proprietary/lib/libnv_fusion.so:system/lib/libnv_fusion.so \

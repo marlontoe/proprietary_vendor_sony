@@ -119,8 +119,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/hikari/proprietary/lib/libidd.so:system/lib/libidd.so \
     vendor/sony/hikari/proprietary/lib/libidl.so:system/lib/libidl.so \
     vendor/sony/hikari/proprietary/lib/libmiscta.so:system/lib/libmiscta.so \
-    vendor/sony/hikari/proprietary/lib/libmllite.so:system/lib/libmllite.so \
-    vendor/sony/hikari/proprietary/lib/libmlplatform.so:system/lib/libmlplatform.so \
     vendor/sony/hikari/proprietary/lib/libmm-color-convertor.so:system/lib/libmm-color-convertor.so \
     vendor/sony/hikari/proprietary/lib/libmmcamera_faceproc.so:system/lib/libmmcamera_faceproc.so \
     vendor/sony/hikari/proprietary/lib/libmmcamera_frameproc.so:system/lib/libmmcamera_frameproc.so \
@@ -132,7 +130,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/hikari/proprietary/lib/libmmjpeg.so:system/lib/libmmjpeg.so \
     vendor/sony/hikari/proprietary/lib/libmmmpo.so:system/lib/libmmmpo.so \
     vendor/sony/hikari/proprietary/lib/libmmstereo.so:system/lib/libmmstereo.so \
-    vendor/sony/hikari/proprietary/lib/libmpl.so:system/lib/libmpl.so \
     vendor/sony/hikari/proprietary/lib/libnetmgr.so:system/lib/libnetmgr.so \
     vendor/sony/hikari/proprietary/lib/libnv.so:system/lib/libnv.so \
     vendor/sony/hikari/proprietary/lib/liboem_rapi.so:system/lib/liboem_rapi.so \
