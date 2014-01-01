@@ -92,13 +92,10 @@ PRODUCT_COPY_FILES += \
     vendor/sony/nozomi/proprietary/etc/firmware/vidc_1080p.fw:system/etc/firmware/vidc_1080p.fw \
     vendor/sony/nozomi/proprietary/etc/firmware/vidcfw.elf:system/etc/firmware/vidcfw.elf \
     vendor/sony/nozomi/proprietary/etc/flashled_calc_parameters.cfg:system/etc/flashled_calc_parameters.cfg \
-    vendor/sony/nozomi/proprietary/etc/sensors.conf:system/etc/sensors.conf \
     vendor/sony/nozomi/proprietary/etc/wifi/calibration:system/etc/wifi/calibration \
     vendor/sony/nozomi/proprietary/lib/hw/camera.msm8660.so:system/lib/hw/camera.msm8660.so \
     vendor/sony/nozomi/proprietary/lib/hw/gps.msm8660.so:system/lib/hw/gps.msm8660.so \
     vendor/sony/nozomi/proprietary/lib/hw/nfc.msm8660.so:system/lib/hw/nfc.msm8660.so \
-    vendor/sony/nozomi/proprietary/lib/hw/sensors.default.so:system/lib/hw/sensors.default.so \
-    vendor/sony/nozomi/proprietary/lib/libMPU3050.so:system/lib/libMPU3050.so \
     vendor/sony/nozomi/proprietary/lib/libQSEEComAPI.so:system/lib/libQSEEComAPI.so \
     vendor/sony/nozomi/proprietary/lib/lib_asb_tee.so:system/lib/lib_asb_tee.so \
     vendor/sony/nozomi/proprietary/lib/libacdbloader.so:system/lib/libacdbloader.so \
@@ -157,7 +154,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/nozomi/proprietary/lib/libril-qc-qmi-1.so:system/lib/libril-qc-qmi-1.so \
     vendor/sony/nozomi/proprietary/lib/libril.so:system/lib/libril.so \
     vendor/sony/nozomi/proprietary/lib/libs1sl.so:system/lib/libs1sl.so \
-    vendor/sony/nozomi/proprietary/lib/libsensors_akm8972.so:system/lib/libsensors_akm8972.so \
     vendor/sony/nozomi/proprietary/lib/libsys-utils.so:system/lib/libsys-utils.so \
     vendor/sony/nozomi/proprietary/lib/libta.so:system/lib/libta.so \
     vendor/sony/nozomi/proprietary/lib/libta_rmt_clnt.so:system/lib/libta_rmt_clnt.so \

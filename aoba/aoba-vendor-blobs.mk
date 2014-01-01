@@ -101,13 +101,10 @@ PRODUCT_COPY_FILES += \
     vendor/sony/aoba/proprietary/etc/firmware/tzapps.mdt:system/etc/firmware/tzapps.mdt \
     vendor/sony/aoba/proprietary/etc/firmware/vidc_1080p.fw:system/etc/firmware/vidc_1080p.fw \
     vendor/sony/aoba/proprietary/etc/flashled_calc_parameters.cfg:system/etc/flashled_calc_parameters.cfg \
-    vendor/sony/aoba/proprietary/etc/sensors.conf:system/etc/sensors.conf \
     vendor/sony/aoba/proprietary/etc/wifi/calibration:system/etc/wifi/calibration \
     vendor/sony/aoba/proprietary/lib/hw/camera.msm8660.so:system/lib/hw/camera.msm8660.so \
     vendor/sony/aoba/proprietary/lib/hw/gps.msm8660.so:system/lib/hw/gps.msm8660.so \
     vendor/sony/aoba/proprietary/lib/hw/nfc.msm8660.so:system/lib/hw/nfc.msm8660.so \
-    vendor/sony/aoba/proprietary/lib/hw/sensors.default.so:system/lib/hw/sensors.default.so \
-    vendor/sony/aoba/proprietary/lib/libMPU3050.so:system/lib/libMPU3050.so \
     vendor/sony/aoba/proprietary/lib/libQSEEComAPI.so:system/lib/libQSEEComAPI.so \
     vendor/sony/aoba/proprietary/lib/lib_asb_tee.so:system/lib/lib_asb_tee.so \
     vendor/sony/aoba/proprietary/lib/libacdbloader.so:system/lib/libacdbloader.so \
@@ -169,7 +166,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/aoba/proprietary/lib/libril-qc-qmi-1.so:system/lib/libril-qc-qmi-1.so \
     vendor/sony/aoba/proprietary/lib/libril.so:system/lib/libril.so \
     vendor/sony/aoba/proprietary/lib/libs1sl.so:system/lib/libs1sl.so \
-    vendor/sony/aoba/proprietary/lib/libsensors_akm8972.so:system/lib/libsensors_akm8972.so \
     vendor/sony/aoba/proprietary/lib/libsys-utils.so:system/lib/libsys-utils.so \
     vendor/sony/aoba/proprietary/lib/libta.so:system/lib/libta.so \
     vendor/sony/aoba/proprietary/lib/libta_rmt_clnt.so:system/lib/libta_rmt_clnt.so \
