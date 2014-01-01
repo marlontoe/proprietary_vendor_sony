@@ -36,3 +36,14 @@ PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/proprietary/system/lib/libOpenVG.so:system/lib/libOpenVG.so \
     $(COMMON_PATH)/proprietary/system/lib/libC2D2.so:system/lib/libC2D2.so \
     $(COMMON_PATH)/proprietary/system/lib/libgsl.so:system/lib/libgsl.so
+
+# OMX
+PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/proprietary/system/lib/libOmxAacDec.so:system/lib/libOmxAacDec.so \
+    $(COMMON_PATH)/proprietary/system/lib/libOmxAacEnc.so:system/lib/libOmxAacEnc.so \
+    $(COMMON_PATH)/proprietary/system/lib/libOmxAmrEnc.so:system/lib/libOmxAmrEnc.so \
+    $(COMMON_PATH)/proprietary/system/lib/libOmxEvrcDec.so:system/lib/libOmxEvrcDec.so \
+    $(COMMON_PATH)/proprietary/system/lib/libOmxEvrcEnc.so:system/lib/libOmxEvrcEnc.so \
+    $(COMMON_PATH)/proprietary/system/lib/libOmxQcelp13Dec.so:system/lib/libOmxQcelp13Dec.so \
+    $(COMMON_PATH)/proprietary/system/lib/libOmxQcelp13Enc.so:system/lib/libOmxQcelp13Enc.so \
+    $(COMMON_PATH)/proprietary/system/lib/libOmxWmaDec.so:system/lib/libOmxWmaDec.so \
