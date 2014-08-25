@@ -164,7 +164,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/nozomi/proprietary/lib/libthermal_mitigation.so:system/lib/libthermal_mitigation.so \
     vendor/sony/nozomi/proprietary/lib/libthermal_mitigation_fusion.so:system/lib/libthermal_mitigation_fusion.so \
     vendor/sony/nozomi/proprietary/lib/libtime_genoff.so:obj/lib/libtime_genoff.so \
-	vendor/sony/nozomi/proprietary/lib/libtime_genoff.so:system/lib/libtime_genoff.so \
+    vendor/sony/nozomi/proprietary/lib/libtime_genoff.so:system/lib/libtime_genoff.so \
     vendor/sony/nozomi/proprietary/vendor/camera/APT01BM0.dat:system/vendor/camera/APT01BM0.dat \
     vendor/sony/nozomi/proprietary/vendor/camera/KMO13BS0.dat:system/vendor/camera/KMO13BS0.dat \
     vendor/sony/nozomi/proprietary/vendor/camera/KMO13BS0_BU6456.dat:system/vendor/camera/KMO13BS0_BU6456.dat \
@@ -179,11 +179,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/nozomi/proprietary/vendor/camera/product.dat:system/vendor/camera/product.dat \
     vendor/sony/nozomi/proprietary/vendor/firmware/libpn544_fw_c3.so:system/vendor/firmware/libpn544_c3.so
 
-# Camera blobs - beware that 0_211 has borked 1080p recording,
-# 1_96 has long 'warmup' time for the preview to actually come up
-# FIXME: This blob-mix should do well for now (fast start, 1080p)
+# Camera blobs
 PRODUCT_COPY_FILES += \
-    vendor/sony/nozomi/proprietary/lib/cam_0_211/libcald_pal.so:system/lib/libcald_pal.so \
-
-PRODUCT_COPY_FILES += \
+    vendor/sony/nozomi/proprietary/lib/cam_1_96/libcald_pal.so:system/lib/libcald_pal.so \
     vendor/sony/nozomi/proprietary/lib/cam_1_96/liboemcamera.so:system/lib/liboemcamera.so
